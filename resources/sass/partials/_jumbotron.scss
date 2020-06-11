@@ -1,0 +1,18 @@
+.jumbo {
+    display: flex;
+    .jumbo-text {
+        color: $blue;
+        h2 {
+            font-size: 58.5px;
+            line-height: 1.1;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+    .jumbo-img {
+        img {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
