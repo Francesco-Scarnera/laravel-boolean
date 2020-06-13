@@ -118,13 +118,13 @@ p {
   color: #ffffff;
 }
 
-.students {
+.student {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.students .student {
+.student .student {
   flex-basis: 48%;
   display: block;
   padding: 1rem;
@@ -135,7 +135,7 @@ p {
   transition: transform 0.3s;
 }
 
-.students .student:hover {
+.student .student:hover {
   transform: translateY(-7px);
 }
 

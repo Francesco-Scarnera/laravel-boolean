@@ -1,9 +1,9 @@
 <script id="student-template" type="text/x-handlebars-template">
 <a href="{{ url('students/show') }}/@{{ slug }}" class="student">
         <header>
-        <img src="@{{ img }}" alt="@{{ nome }}">
+            <img src="@{{ img }}" alt="@{{ nome }}">
             <div class="info">
-                <h3>{{ $student['nome'] }} ({{ $student['età'] }} anni)</h3>
+                <h3>@{{ nome }} (@{{ età }} anni)</h3>
                 <h4>
                     @{{ assunzione }} da @{{ azienda }} come @{{ ruolo }}
                 </h4>

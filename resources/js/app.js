@@ -3,12 +3,13 @@ require('./bootstrap');
 $(document).ready(function (){
 
     //SETUP 
-    var filter = $('.students');
+    var container = $('.students');
+    var filter = $('#filter');
     var apiUrl = window.location.protocol + '//' +  window.location.host + '/api/students/genders';
     console.log(apiUrl);
 
-    var source = $('student-template').html();
-    var template = Hendlebars.compile(source);
+    var source = $('#student-template').html();
+    var template = Handlebars.compile(source);
 
     filter.on('change', function(){
         var gender = $(this).val();
@@ -28,6 +29,7 @@ $(document).ready(function (){
 
                 // clean 
                 container.html('');
+                
                 for (var i = 0; i < res.response.length; i++) {
                     var item = res.response[i]; 
                     var context = {
